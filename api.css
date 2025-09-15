@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"poppins";
+    color: #fff;
+    background: #343434;
+}
+.container{
+    width: 26%;
+}
+.card{
+    border-radius: 50px;
+    background: #343434;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    padding: 3%;
+    text-align: center;
+}
+.input-box{
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+    align-items: center;
+}
+.input-box input{
+   background-color: #fff;
+height: 60%;
+width: 80%;
+border-radius: 50px / 100px;
+padding: 5px;
+display: inline-block;
+margin-right: 1em;
+font-size: 1.5rem;
+}
+.input-box button{
+    background-color: #fff;
+height: 2.5rem;
+width:  2.5rem;
+border-radius: 50%;
+padding: 5px;
+display: inline-block;
+
+}
+.card h6{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.card h4{
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+img #icon{
+    width: 20%;
+}
+h6 #weather{
+   text-transform: capitalize;
+}
+button.refresh{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    background: transparent;
+    border: 0;
+    color: #9c9c9d;
+    font-size: 30px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 4px 10px #252525,5px 5px 10px #4a4a4a;
+}
+button.refresh:hover{
+    box-shadow: inset 10px 4px 10px #252525,inset 5px 5px 18px #4a4a4a;
+}
+.details{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    
+    padding: 3px;
+     display: flex;          
+      gap: 20px;  
+}
+.humidity{
+    width: 50%;
+    height: 80%;
+    background-color: #595959;
+    padding: 3px;
+
+}
+.wind-speed{
+    width: 50%;
+    height: 80%;
+    background-color: #595959;
+     padding: 3px;
+
+}
+/*  Base responsive improvements */
+.container {
+  width: 90%;
+  max-width: 400px;  
+}
+
+.input-box input {
+  width: 70%;
+  font-size: 1rem;
+}
+
+.input-box button {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1rem;
+}
+
+.card h4 {
+  font-size: 3rem;
+}
+
+.details {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*  For medium screens (tablets) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    padding: 5%;
+  }
+  .input-box input {
+    width: 65%;
+    font-size: 1.2rem;
+  }
+  .card h4 {
+    font-size: 2.5rem;
+  }
+}
+
+/*  For small screens (phones) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .input-box input {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+  .input-box button {
+    align-self: center;
+  }
+  .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .humidity, .wind-speed {
+    width: 100%;
+  }
+  .card h4 {
+    font-size: 2rem;
+  }
+  .card h6 {
+    font-size: 1rem;
+  }
+}
